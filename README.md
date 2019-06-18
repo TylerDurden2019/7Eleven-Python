@@ -18,7 +18,7 @@ Uncomment the SSL section to enable HTTPS. Generate your own certificates using 
 
 Copy the crt and key files to the same directory as app.py and uncomment the last line in app.py and comment the app.run line above.
 
-`app.run(host='0.0.0.0',ssl_context=context)`
+`app.run(host='0.0.0.0',port=443,ssl_context=context)`
 
 # Usage
 Very simple to use, run the program with either of the following commands `python3 app.py` or  `python app.py`. After you have started the program all you have to do is open your web browser and navigate to `http://[your-local-ip-address]:5000` i.e. `http://192.168.1.100:5000`. Then simply login with your 7-Eleven email and password, and click either automatic lock in or manually enter a postcode that you want to lock in from.
